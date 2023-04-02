@@ -1,0 +1,28 @@
+.about {
+  padding-bottom: 2rem;
+}
+.about_bio-image {
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("/dist/ricardo-gomez-angel-5YM26lUicfU-unsplash.jpg") right top;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.about_bio {
+  width: 80%;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+.jobs {
+  width: 60vw;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}/*# sourceMappingURL=about.css.map */

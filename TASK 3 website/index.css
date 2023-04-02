@@ -1,0 +1,253 @@
+:root{
+    --primary-color:steelblue;
+}
+*{
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+body{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+color: black;
+
+}
+.toggle{position: fixed;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background:var(--primary-color) url(menu.png) ;
+    z-index: 50;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size:30px ;
+    cursor: pointer;
+    
+}
+.toggle.active{
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background:var(--primary-color) url(close.png) ;
+    z-index: 50;
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size:30px ;
+    cursor: pointer;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 900;
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    z-index: 40;
+}
+.home-img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 110%;
+}
+.maincontent{
+    display: flex;
+    height: 70vh;
+    justify-content: center;
+  
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 100px;
+    z-index: 10;
+
+}
+p{
+    margin: 10px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: 300;
+   
+}
+.btn a{
+    background-color: var(--primary-color);
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px 30px; 
+    cursor: pointer;
+}
+.btn a:hover{
+   transform:scale(2) ;
+}
+
+.nav{
+    position: fixed;
+   top: 0;
+  left: 100%;width: 100%;
+   height: 100%;
+   background-color: rgb(243, 247, 250);
+   z-index: 30;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 98vh;
+}
+.nav.active{
+    left: 0;
+}
+.nav ul{
+    position: relative;
+
+}
+
+.nav ul li{
+    position: relative;
+    list-style: none;
+    text-align: center;
+}
+.nav ul li a{
+    text-decoration: none;
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: black;
+}
+.nav ul li a:hover{
+    color: rgb(239, 19, 19);
+}
+
+.nav .social{
+position: fixed;
+left: 0;
+padding: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+.gmail{
+    z-index: 30;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+}
+/*SERVICES PAGE*/
+
+.home{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 100px;
+    width: 80%;
+    margin-top: 100px;
+}
+.services{
+   
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    text-align: center;
+}
+.services .service:hover{
+    box-shadow:0 10px 30px rgb(0,0,0,0.4);
+}
+.service h2{
+    background-color: var(--primary-color);}
+    .services h2{
+        font-size: 2.0rem;
+    }
+
+
+.home .title h2{
+    font-size: 2.3rem;
+    font-weight: 500;
+
+}
+/*work*/
+.work{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    padding: 100px;
+    width: 80%;
+    margin-top: 100px;
+}
+.portfolio{
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-evenly;
+}
+.portfolio .items{
+    position: relative;
+}
+.portfolio .items .action a{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height:100% ;
+    background: rgb(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    opacity:0 ;
+    color: aliceblue;
+   
+}
+
+.portfolio .items:hover a{
+   opacity: 1; 
+}
+
+main{
+    display: flex;
+width: 80%;
+    justify-content: center;
+    text-align: center;
+    padding: 100px;
+}
+.cont h2{
+font-size: 3rem;
+}
+label{
+    display: block;
+    font-size: 2rem; 
+}
+input{
+    font-size: larger;
+    width: 80%;
+    padding: 10px;
+}
+textarea{
+    padding: 10px;
+    margin: 10px;
+    font-size: 2rem;
+}
+button{
+    font-size: larger;
+    padding: 10px;
+    margin: 10px;
+}
+
+@media (max-width:1086px) {
+    .home-img{
+        display: none;
+    }
+    .services{
+   
+       
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    
+}

@@ -1,0 +1,18 @@
+.menu-btn {
+  position: absolute;
+  z-index: 1;
+  right: 1rem;
+  top: 1rem;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+  background-color: white;
+}
+.menu-btn_burger {
+  position: absolute;
+  top: 0.5rem;
+  right: 0rem;
+  width: 28px;
+  height: 5px;
+  background: white;
+}/*# sourceMappingURL=toggle.css.map */
